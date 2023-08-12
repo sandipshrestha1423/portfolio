@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Detail() {
   return (
-    <div id="carouselExampleCaptions" className="carousel slide bg-dark">
+    <div id="carouselExampleCaptions" className="carousel slide">
       <div className="carousel-indicators">
         <button
           type="button"
@@ -26,26 +26,39 @@ function Detail() {
           aria-label="Slide 3"
         />
       </div>
-      <div className="carousel-inner" />
-      <div className="carousel-item active">
-        <img src="..." className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img
+            src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+            className="d-block w-100"
+            alt="..."
+          />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
-      </div>
-      <div className="carousel-item">
-        <img src="..." className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+        <div className="carousel-item">
+          <img
+            src="https://imgv3.fotor.com/images/blog-cover-image/part-blurry-image.jpg"
+            className="d-block w-100"
+            alt="..."
+          />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
         </div>
-      </div>
-      <div className="carousel-item">
-        <img src="..." className="d-block w-100" alt="..." />
-        <div className="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+        <div className="carousel-item">
+          <img
+            src="https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg"
+            className="d-block w-100"
+            alt="..."
+          />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
       <button
@@ -54,9 +67,8 @@ function Detail() {
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
       >
-        <span className="carousel-control-prev-icon" aria-hidden="true">
-          <span className="visually-hidden">Previous</span>
-        </span>
+        <span className="carousel-control-prev-icon" aria-hidden="true" />
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
         className="carousel-control-next"
@@ -64,9 +76,8 @@ function Detail() {
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
       >
-        <span className="carousel-control-next-icon" aria-hidden="true">
-          <span className="visually-hidden">Next</span>
-        </span>
+        <span className="carousel-control-next-icon" aria-hidden="true" />
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );

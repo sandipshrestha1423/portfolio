@@ -3,50 +3,83 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
-  width: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
+
 .app {
   display: flex;
   position: relative;
+
+  &.menu-open {
+    .sidebar {
+      display: block;
+    }
+
+    .content {
+      margin-left: 0;
+      width: calc(100vw - 24vw);
+    }
+  }
 }
+
 @media (max-width: 768px) {
+  body,
   .home {
-    width: 75vw;
-    background-size: contain;
-    justify-content: center;
+    width: 100vw;
   }
-  .me {
-    font-size: 37px;
+
+  .home {
+    background-size: cover;
+    justify-content: safe;
+    z-index: 1;
+
+    .me {
+      font-size: 37px;
+    }
   }
+
+  .content {
+    margin-left: 0;
+    width: 100vw;
+  }
+
   .sidebar {
+    width: 0;
+    min-width: 0;
     display: none;
+    z-index: 1;
   }
 
   .menu-button {
     display: block;
   }
 
-  /* Additional styling for the open menu */
   .sidebar.open {
     left: 0;
   }
 }
+
 .content {
   margin-left: 24vw;
+  width: calc(100vw - 24vw);
+  transition: margin-left 0.3s ease, width 0.3s ease;
 }
+
 .home {
   display: flex;
   justify-content: center;
   flex-grow: 1;
-  background-image: url(./assets/content.jpg);
+  background-image: url(https://media.istockphoto.com/id/637696304/photo/patan.jpg?s=612x612&w=0&k=20&c=-53aSTGBGoOOqX5aoC3Hs1jhZ527v3Id_xOawHHVPpg=);
   min-height: 100vh;
-  min-width: 76vw;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   overflow: hidden;
   z-index: 0;
+
   .me {
     color: black;
     font-size: 45px;
@@ -57,45 +90,48 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+
     .intro {
       font-size: 30px;
     }
   }
 }
-.carousel {
-  color: black;
-  margin-top: 1000px;
-  margin-left: 350px;
-  display: block;
-  z-index: 1;
+
+.me,
+.home {
+  min-width: 75vw;
 }
+
 .menu-button {
+  display: none;
   font-size: 24px;
   position: absolute;
   top: 10px;
   left: 10px;
   cursor: pointer;
-  z-index: 1; /* Place above the sidebar content */
+  z-index: 1;
 }
+
 .sidebar.open {
-  left: 0; /* Show the sidebar when open */
+  left: 0;
 }
+
 .sidebar {
   min-width: 24vw !important;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  left: -24vw; /* Initially hide the sidebar */
   transition: left 0.3s ease;
-
   background-color: grey;
+  z-index: 1;
 
   .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
+
     .image {
       margin: 10px;
       width: 150px;
@@ -111,15 +147,18 @@ body {
         border-radius: 50%;
       }
     }
+
     .name {
       font-size: 18px;
     }
+
     .icons {
       .fb {
         display: inline-block;
       }
     }
   }
+
   nav {
     margin-top: 40px;
     display: flex;
@@ -134,13 +173,15 @@ body {
       padding: 15px;
       list-style-type: none;
       cursor: pointer;
-    }
-    .icon {
-      font-size: 20px;
-      padding-right: 5px;
+
+      .icon {
+        font-size: 20px;
+        padding-right: 5px;
+      }
     }
   }
+
   .copyright {
-    margin: 41px 0px 0px 12px;
+    margin: 10px 0px 0px 12px;
   }
 }

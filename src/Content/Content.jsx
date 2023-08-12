@@ -1,4 +1,6 @@
 // import React from 'react'
+import Accordian from "./Accordian";
+import Detail from "./Detail";
 import Home from "./Home";
 import Text from "./Text";
 
@@ -9,6 +11,8 @@ function Content() {
         <Home />
 
         <Text />
+        <Detail />
+        <Accordian />
       </div>
     </>
   );
