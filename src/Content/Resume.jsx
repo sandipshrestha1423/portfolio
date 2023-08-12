@@ -35,7 +35,11 @@ function Resume() {
             <div className="resume-title">Karate</div>
             <div className="resume-info">
               <p className="date">2015-2020</p>
-              <p>BhanuBhakta Memorial College</p>
+              <p>
+                Five years of dedicated Karate training culminating in the
+                achievement of a coveted black belt, showcasing discipline,
+                perseverance, and mastery of martial arts techniques.
+              </p>
             </div>
           </div>
         </div>

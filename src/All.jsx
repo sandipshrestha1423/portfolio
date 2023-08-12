@@ -1,15 +1,18 @@
 // import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Content from "./Content/Content";
 // import Detail from "./Content/Detail";
 import Sidebar from "./Sidebar";
 function All() {
   return (
     <>
-      <div className="app">
-        <Sidebar />
-        <Sidebar />
-        <Content />
-      </div>
+      <Router>
+        <div className="app">
+          <Sidebar />
+
+          <Content />
+        </div>
+      </Router>
     </>
   );
 }
