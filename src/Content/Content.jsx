@@ -9,7 +9,6 @@ function Content() {
     <>
       <div className="content">
         <Home />
-
         <Text />
         <Detail />
         <Accordian />

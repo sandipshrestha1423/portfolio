@@ -42,6 +42,7 @@ body {
   }
 
   .content {
+    justify-content: safe;
     margin-left: 0;
     width: 100vw;
   }
@@ -78,7 +79,6 @@ body {
   background-position: top;
   background-attachment: fixed;
   overflow: hidden;
-  z-index: 0;
 
   .me {
     color: black;
@@ -124,7 +124,6 @@ body {
   left: 0;
   transition: left 0.3s ease;
   background-color: grey;
-  z-index: 1;
 
   .profile {
     display: flex;
