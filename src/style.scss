@@ -28,6 +28,22 @@ body {
   margin-left: 24vw;
   width: calc(100vw - 24vw);
   transition: margin-left 0.3s ease, width 0.3s ease;
+
+  .about-intro {
+    margin: 0;
+    min-width: 75vw;
+    background-image: linear-gradient(to right, #000000, rgb(18, 17, 17));
+    .about-image {
+      img {
+        max-width: 250px;
+        height: auto;
+        border-radius: 30px;
+      }
+    }
+    p {
+      font-style: italic;
+    }
+  }
 }
 
 .home {
@@ -64,7 +80,7 @@ body {
 }
 
 .resume {
-  position: absolute;
+  margin: 0;
   left: 12px;
   width: 100%;
   background-color: rgb(206, 197, 197);
@@ -177,6 +193,19 @@ body {
     justify-content: safe;
     margin-left: 0;
     width: 100vw;
+  }
+  .about-intro {
+    display: flex;
+
+    //   .about-image {
+    //     img {
+    //       max-width: 250px;
+    //       height: auto;
+    //       border-radius: 30px;
+    //       justify-content: center;
+    //     }
+    //   }
+    // }
   }
 
   .sidebar {

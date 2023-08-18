@@ -2,15 +2,15 @@
 import Accordian from "./Accordian";
 import Detail from "./Detail";
 import Home from "./Home";
+import Me from "./Me";
 import Resume from "./Resume";
-import Text from "./Text";
 
 function Content() {
   return (
     <>
       <div className="content">
         <Home />
-        <Text />
+        <Me />
         <Detail />
         <Accordian />
         <Resume />
