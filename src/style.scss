@@ -16,11 +16,6 @@ body {
   .sidebar {
     display: block;
   }
-
-  .content {
-    margin-left: 24vw;
-    max-width: calc(100vw - 24vw);
-  }
 }
 
 .content {
@@ -188,7 +183,9 @@ body {
       font-size: 37px;
     }
   }
-
+  .about-intro {
+    margin: 0;
+  }
   .content {
     justify-content: safe;
     margin-left: 0;
