@@ -9,9 +9,12 @@ function Me() {
         <div className="col-lg-3 about-image">
           <img src={Photo} alt="" />
         </div>
-        <div className="col-lg-4">
-          <h1>Web Designer</h1>
-          <h3>Begginer</h3>
+        <div className="left col-lg-4">
+          <div className="head">
+            <h1>Web Designer</h1>
+            <h3>Begginer</h3>
+          </div>
+
           <p className="py-2">
             Passionate beginner in the realm of technology and creativity,
             eagerly stepping into the world of web development to craft digital
