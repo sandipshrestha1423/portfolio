@@ -23,27 +23,36 @@ body {
   margin-left: 24vw;
   width: calc(100vw - 24vw);
   transition: margin-left 0.3s ease, width 0.3s ease;
-
-  .about-intro {
-    margin: 0;
-    min-width: 75vw;
-    background-image: linear-gradient(to right, #000000, rgb(18, 17, 17));
-    .about-image {
-      img {
-        max-width: 250px;
-        height: auto;
-        border-radius: 30px;
-      }
-    }
-    p {
-      font-style: italic;
-    }
-    .paragraph {
-      display: flex;
+}
+.about-intro {
+  margin: 0;
+  min-width: 75vw;
+  background-image: linear-gradient(to right, #000000, rgb(18, 17, 17));
+  .about-image {
+    img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 30px;
     }
   }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 240px;
+    .head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  p {
+    font-style: italic;
+  }
+  .paragraph {
+    display: flex;
+  }
 }
-
 .home {
   display: flex;
   justify-content: center;
