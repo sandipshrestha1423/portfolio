@@ -36,9 +36,9 @@ body {
     }
   }
   .flex {
-    display: flex;
-    align-items: center;
-    gap: 240px;
+    // display: flex;
+    // align-items: center;
+    // gap: 25%;
     .head {
       display: flex;
       flex-direction: column;
@@ -51,6 +51,7 @@ body {
   }
   .paragraph {
     display: flex;
+    text-align: justify;
   }
 }
 .home {

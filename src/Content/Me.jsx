@@ -6,12 +6,12 @@ function Me() {
     <>
       <div className="about-intro row text-white">
         <h1 className="text-white">About Me.....</h1>
-        <div className="flex">
-          <div className=" about-image">
+        <div className="flex row">
+          <div className=" about-image col-lg-6">
             <img src={Photo} alt="" />
           </div>
 
-          <div className="head">
+          <div className="head col-lg-6">
             <h1>Web Designer</h1>
             <h3>Begginer</h3>
           </div>
