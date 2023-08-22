@@ -1,6 +1,8 @@
 // import React from 'react'
+// import Home from "./Content/Home";
+// import Resume from "./Content/Resume";
+import { Link } from "react-scroll";
 import Profile from "./assets/profile.jpg";
-
 import { MdFacebook } from "react-icons/md";
 import { PiMessengerLogoFill } from "react-icons/pi";
 import {
@@ -56,19 +58,37 @@ function Sidebar() {
             <div className="icon">
               <BiHomeAlt />
             </div>
-            Home
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Home
+            </Link>
           </li>
           <li className="nav">
             <div className="icon">
               <BiUser />
             </div>
-            About
+            <Link to="about" spy={true} smooth={true} offset={0} duration={500}>
+              About
+            </Link>
           </li>
           <li className="nav">
             <div className="icon">
               <BiFileBlank />
             </div>
-            Resume
+            <Link
+              to="resume"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Resume
+            </Link>
           </li>
           <li className="nav">
             <div className="icon">

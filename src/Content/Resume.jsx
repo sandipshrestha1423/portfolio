@@ -3,7 +3,12 @@
 function Resume() {
   return (
     <>
-      <div className="resume row " data-aos="fade-up" data-aos-duration="1000">
+      <div
+        className="resume row "
+        id="resume"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1>My Resume</h1>
         <div className="col-lg-6">
           <div className="resume-content">

@@ -9,13 +9,12 @@ function Me() {
         <div className="col-lg-3 about-image">
           <img src={Photo} alt="" />
         </div>
+        <div className="head">
+          <h1>Web Designer</h1>
+          <h3>Begginer</h3>
+        </div>
         <div className="left col-lg-4">
-          <div className="head">
-            <h1>Web Designer</h1>
-            <h3>Begginer</h3>
-          </div>
-
-          <p className="py-2">
+          <p className="py-2 paragraph">
             Passionate beginner in the realm of technology and creativity,
             eagerly stepping into the world of web development to craft digital
             experiences that blend innovation and design. Excited to embark on a
@@ -23,7 +22,7 @@ function Me() {
             create impactful solutions.
           </p>
         </div>
-        <div className="col-lg-5">
+        <div className="col-lg-5 paragraph">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem
             repellendus reprehenderit commodi ducimus, explicabo natus quas qui

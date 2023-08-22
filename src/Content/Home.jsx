@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <div className=" home">
+      <div className=" home" id="home">
         <div className="me">
           <p>
             Sandip Shestha
