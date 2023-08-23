@@ -64,6 +64,7 @@ function Sidebar() {
               smooth={true}
               offset={-70}
               duration={500}
+              className="px-3"
             >
               Home
             </Link>
@@ -72,7 +73,14 @@ function Sidebar() {
             <div className="icon">
               <BiUser />
             </div>
-            <Link to="about" spy={true} smooth={true} offset={0} duration={500}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="px-3"
+            >
               About
             </Link>
           </li>
@@ -84,8 +92,9 @@ function Sidebar() {
               to="resume"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
+              className="px-3"
             >
               Resume
             </Link>
@@ -94,19 +103,32 @@ function Sidebar() {
             <div className="icon">
               <BiBookContent />
             </div>
-            Portfolio
+            <a href="" className="px-3">
+              Portfolio
+            </a>
           </li>
           <li className="nav">
             <div className="icon">
               <BiServer />
             </div>
-            Services
+            <Link
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="px-3"
+            >
+              Projects
+            </Link>
           </li>
           <li className="nav">
             <div className="icon">
               <BiLogoGmail />
             </div>
-            Contact
+            <a href="" className="px-3">
+              Contact
+            </a>
           </li>
         </nav>
 

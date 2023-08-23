@@ -3,6 +3,7 @@ import Accordian from "./Accordian";
 import Detail from "./Detail";
 import Home from "./Home";
 import Me from "./Me";
+import Project from "./Project";
 import Resume from "./Resume";
 import { Element } from "react-scroll";
 
@@ -15,11 +16,14 @@ function Content() {
         <Me />
       </Element>
 
-      <Detail />
-      <Accordian />
       <Element name="resume" className="element">
         <Resume />
       </Element>
+      <Element name="project" className="element">
+        <Project />
+      </Element>
+      {/* <Detail /> */}
+      {/* <Accordsian /> */}
     </div>
   );
 }

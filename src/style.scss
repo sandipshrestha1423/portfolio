@@ -108,10 +108,6 @@ body {
   }
 }
 
-// .sidebar.open {
-//   left: 0;
-// }
-
 .sidebar {
   width: 24vw !important;
   height: 100vh;
@@ -156,8 +152,12 @@ body {
 
   nav {
     margin-top: 40px;
+    li :active {
+      border-radius: 5px;
+      background-color: rgb(133, 116, 116);
+    }
 
-    .nav {
+    li {
       display: flex;
       flex-direction: row;
       font-size: 20px;
@@ -168,6 +168,12 @@ body {
       cursor: pointer;
       a {
         text-decoration: none;
+        color: black;
+        transition: border-radius 0.5s;
+        a:hover li {
+          // border-radius: 10px;
+          background-color: white;
+        }
       }
 
       .icon {
@@ -183,7 +189,36 @@ body {
     margin: 10px 0px 0px 12px;
   }
 }
-
+.project {
+  background-color: rgb(123, 114, 114);
+  position: relative;
+  .top {
+    background-color: orange;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+  }
+  h1 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    .card {
+      cursor: pointer;
+      margin-top: 10px;
+      width: 400px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   body,
   .home {
@@ -235,12 +270,4 @@ body {
       display: none;
     }
   }
-
-  // .menu-button {
-  //   display: block;
-  // }
-
-  // .sidebar.open {
-  //   left: 0;
-  // }
 }
