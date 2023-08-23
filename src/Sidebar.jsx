@@ -1,4 +1,5 @@
-// import React from 'react'
+import { useEffect } from "react";
+// import bootstrap from "bootstrap";
 // import Home from "./Content/Home";
 // import Resume from "./Content/Resume";
 import { Link } from "react-scroll";
@@ -18,6 +19,15 @@ import {
 } from "react-icons/bi";
 
 function Sidebar() {
+  useEffect(() => {
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    tooltipTriggerList.forEach((tooltipTriggerEl) => {
+      // eslint-disable-next-line no-undef
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  }, []);
   const styles = {
     fontSize: "30px",
     margin: "10px 10px 0 0",
@@ -34,21 +44,64 @@ function Sidebar() {
             <h1>Sandip Shrestha</h1>
           </div>
           <div className="icons">
-            <div className="fb"></div>
             <div className="fb">
-              <MdFacebook style={styles} />
+              <a
+                href="https://www.facebook.com/sandip.shrestha.927758"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <MdFacebook style={styles} />
+              </a>
             </div>
             <div className="fb">
-              <PiMessengerLogoFill style={styles} />
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Currently Unavailable"
+              >
+                {" "}
+                <PiMessengerLogoFill style={styles} />
+              </a>
             </div>
             <div className="fb">
-              <BiLogoInstagramAlt style={styles} />
+              <a
+                href="https://www.instagram.com/sandipshrest/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <BiLogoInstagramAlt style={styles} />
+              </a>
             </div>
             <div className="fb">
-              <BiLogoYoutube style={styles} />
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Currently Unavailable"
+              >
+                {" "}
+                <BiLogoYoutube style={styles} />
+              </a>
             </div>
             <div className="fb">
-              <BiLogoLinkedinSquare style={styles} />
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Currently Unavailable"
+              >
+                {" "}
+                <BiLogoLinkedinSquare style={styles} />
+              </a>
             </div>
           </div>
         </div>

@@ -12,7 +12,11 @@ function Project() {
         <Link to="home" className="top mx-2 btn">
           Back To Top
         </Link>
-        <a href="https://shresthasandip.netlify.app/">
+        <a
+          href="https://shresthasandip.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="card m-5">
             <div className="card-image">
               <img src={web} alt="" />
