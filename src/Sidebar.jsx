@@ -66,12 +66,9 @@ function Sidebar() {
             </div>
             <div className="fb">
               <a
-                href="git@github.com:sandipshrestha1423/portfolio.git"
+                href="https://github.com/sandipshrestha1423/"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-title="Currently Unavailable"
               >
                 <BiLogoGithub style={styles} />
               </a>
