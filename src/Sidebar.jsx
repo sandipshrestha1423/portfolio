@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import { Link } from "react-scroll";
 import Profile from "./assets/profile.jpg";
 import { MdFacebook } from "react-icons/md";
-import { PiMessengerLogoFill } from "react-icons/pi";
 import {
   BiLogoGmail,
   BiServer,
@@ -16,6 +15,7 @@ import {
   BiLogoInstagramAlt,
   BiLogoYoutube,
   BiLogoLinkedinSquare,
+  BiLogoGithub,
 } from "react-icons/bi";
 
 function Sidebar() {
@@ -56,19 +56,6 @@ function Sidebar() {
             </div>
             <div className="fb">
               <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-title="Currently Unavailable"
-              >
-                {" "}
-                <PiMessengerLogoFill style={styles} />
-              </a>
-            </div>
-            <div className="fb">
-              <a
                 href="https://www.instagram.com/sandipshrest/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +73,18 @@ function Sidebar() {
                 data-bs-placement="bottom"
                 data-bs-title="Currently Unavailable"
               >
-                {" "}
+                <BiLogoGithub style={styles} />
+              </a>
+            </div>
+            <div className="fb">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Currently Unavailable"
+              >
                 <BiLogoYoutube style={styles} />
               </a>
             </div>
