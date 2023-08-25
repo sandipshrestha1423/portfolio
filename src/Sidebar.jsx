@@ -66,7 +66,7 @@ function Sidebar() {
             </div>
             <div className="fb">
               <a
-                href=""
+                href="git@github.com:sandipshrestha1423/portfolio.git"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-bs-toggle="tooltip"
