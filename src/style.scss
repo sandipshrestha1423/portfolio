@@ -9,8 +9,8 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-.heading{
-  font-family: "Merriweather",serif;
+.heading {
+  font-family: "Merriweather", serif;
 }
 .app {
   display: flex;
@@ -42,7 +42,6 @@ body {
     .head {
       display: flex;
       flex-direction: column;
-      
     }
   }
 
@@ -227,60 +226,60 @@ body {
     }
   }
 }
-// @media (max-width: 768px) {
-//   body,
-//   .home {
-//     width: 100vw;
-//   }
+@media (max-width: 768px) {
+  body,
+  .home {
+    width: 100vw;
+  }
 
-//   .home {
-//     background-size: cover;
-//     justify-content: safe;
-//     z-index: 1;
+  .home {
+    background-size: cover;
+    justify-content: safe;
+    z-index: 1;
 
-//     .me {
-//       font-size: 37px;
-//     }
-//   }
-//   .project {
-//     .card {
-//       max-width: 350px;
-//     }
-//   }
-//   .content {
-//     justify-content: safe;
-//     margin-left: 0;
-//     width: 100vw;
-//   }
-//   .about-intro {
-//     display: flex;
+    .me {
+      font-size: 37px;
+    }
+  }
+  .project {
+    .card {
+      max-width: 350px;
+    }
+  }
+  .content {
+    justify-content: safe;
+    margin-left: 0;
+    width: 100vw;
+  }
+  .about-intro {
+    display: flex;
 
-//     .about-image {
-//       display: flex;
-//       justify-content: center;
-//     }
-//     .left {
-//       .head {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//       }
-//     }
-//   }
+    .about-image {
+      display: flex;
+      justify-content: center;
+    }
+    .left {
+      .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
 
-//   .sidebar {
-//     width: 0;
-//     min-width: 0;
-//     max-width: 0;
-//     display: none;
-//     .profile {
-//       display: none;
-//     }
-//     nav {
-//       display: none;
-//     }
-//     .copyright {
-//       display: none;
-//     }
-//   }
-// }
+  .sidebar {
+    width: 0;
+    min-width: 0;
+    max-width: 0;
+    display: none;
+    .profile {
+      display: none;
+    }
+    nav {
+      display: none;
+    }
+    .copyright {
+      display: none;
+    }
+  }
+}

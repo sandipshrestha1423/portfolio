@@ -5,7 +5,7 @@ function Me() {
   return (
     <>
       <div className="about-intro row text-white">
-        <h1 className="text-white">About.....</h1>
+        <h1 className="text-white heading">About.....</h1>
         <div className="flex row">
           <div className=" about-image col-lg-4">
             <img src={Photo} alt="" />

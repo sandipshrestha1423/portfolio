@@ -9,7 +9,7 @@ function Resume() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <h1>My Resume</h1>
+        <h1 className="heading">My Resume</h1>
         <div className="col-lg-6">
           <div className="resume-content">
             <div className="resume-topic">--Summary--</div>

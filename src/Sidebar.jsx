@@ -41,7 +41,7 @@ function Sidebar() {
             <img src={Profile} alt="" />
           </div>
           <div className="name">
-            <h1>Sandip Shrestha</h1>
+            <h1 className="heading">Sandip Shrestha</h1>
           </div>
           <div className="icons">
             <div className="fb">
