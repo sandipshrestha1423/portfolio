@@ -9,7 +9,7 @@ function Project() {
   return (
     <>
       <div className="project row">
-        <h1>Projects</h1>
+        <h1 className="heading">Projects</h1>
         <Link to="home" className="top mx-2 btn">
           Back To Top
         </Link>
