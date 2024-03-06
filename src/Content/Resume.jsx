@@ -21,7 +21,7 @@ function Resume() {
                 design solutions.
               </p>
               <li>Kathmandu,Nepal</li>
-              <li>9808080808</li>
+
               <li>shresthasandip1423@gmail.com</li>
             </div>
           </div>

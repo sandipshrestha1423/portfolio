@@ -50,6 +50,7 @@ body {
     display: flex;
     text-align: justify;
     line-height: 2;
+    width: 35vw;
   }
 }
 .home {
@@ -62,20 +63,23 @@ body {
   background-position: top;
   background-attachment: fixed;
   // overflow: hidden;
-
+  .menu-button {
+    display: none;
+  }
   .me {
-    color: black;
-    font-size: 50px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    
+    
+    .name {
+      font-size: 2rem; /* Default font size for larger screens */
+    }
 
     .intro {
-      font-size: 30px;
+      font-size: 1.5rem; /* Default font size for larger screens */
     }
   }
 }
@@ -236,7 +240,14 @@ body {
     background-size: cover;
     justify-content: safe;
     z-index: 1;
-
+    .menu-button {
+      display: block;
+      font-size: 30px;
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      background-color: rgba(255, 255, 255, 0);
+    }
     .me {
       font-size: 37px;
     }
@@ -258,29 +269,20 @@ body {
       display: flex;
       justify-content: center;
     }
-    
-      .head {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        // justify-content: center;
-      }
-    
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+    }
   }
 
   .sidebar {
     width: 0;
     min-width: 0;
     max-width: 0;
-    display: none;
-    .profile {
-      display: none;
-    }
-    nav {
-      display: none;
-    }
-    .copyright {
-      display: none;
-    }
+    left: -24vw;
+   
   }
 }
