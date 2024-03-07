@@ -13,7 +13,7 @@ function Me() {
           <div className="col-lg-8">
             <div className="head ">
               <h1>Web Developer</h1>
-              <h3>Begginer</h3>
+              <h3>Beginner</h3>
             </div>
             <div className="#">
               <p className="py-2 paragraph ">
