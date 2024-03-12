@@ -72,8 +72,7 @@ body {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: bold;
-    
-    
+
     .name {
       font-size: 2rem; /* Default font size for larger screens */
     }
@@ -94,10 +93,14 @@ body {
   left: 12px;
   width: 100%;
   background-color: rgb(206, 197, 197);
+  .heading {
+    margin-bottom: 50px;
+  }
   .resume-content {
-    margin-bottom: 15px;
+    width: 70vw;
+    margin: 0 5vw 5vw 5vw;
     padding-left: 10px;
-    border-left: 1px solid grey;
+    border-left: 3px solid grey;
     .resume-topic {
       font-weight: bold;
       font-size: 28px;
@@ -283,6 +286,5 @@ body {
     min-width: 0;
     max-width: 0;
     left: -24vw;
-   
   }
 }
