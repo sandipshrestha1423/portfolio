@@ -238,9 +238,7 @@ body {
   .home {
     width: 100vw;
   }
-.paragraph{
-  width:80vw;
-}
+
   .home {
     background-size: cover;
     justify-content: safe;
@@ -269,12 +267,16 @@ body {
   }
   .about-intro {
     display: flex;
+    justify-content: center;
 
     .about-image {
       display: flex;
       justify-content: center;
     }
-
+    .paragraph {
+      width: 80vw;
+      margin-left: 6vw;
+    }
     .head {
       display: flex;
       flex-direction: column;
