@@ -3,6 +3,7 @@
 import { Link } from "react-scroll";
 import web from "../assets/web.png";
 import green from "../assets/green.png";
+import project from "../assets/project.png";
 import "../style.scss";
 
 function Project() {
@@ -39,6 +40,20 @@ function Project() {
           >
             <div className="card-image">
               <img src={green} alt="" />
+            </div>
+            <div className="card-title py-3">
+              <h2>NGO</h2>
+            </div>
+          </a>
+        </div>
+        <div className="card col-lg-6 m-5">
+          <a
+            href="https://whaiyatfest.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="card-image">
+              <img src={project} alt="" />
             </div>
             <div className="card-title py-3">
               <h2>NGO</h2>
