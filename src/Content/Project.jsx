@@ -17,7 +17,7 @@ function Project() {
         <br />
         <br />
         <br />
-        <h3>*Made as a demo</h3>
+        <h3>*Made as a demo*</h3>
         <div className="card col-lg-6 m-5">
           <a
             href="https://shresthasandip.netlify.app/"
