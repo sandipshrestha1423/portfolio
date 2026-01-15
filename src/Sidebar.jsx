@@ -46,7 +46,7 @@ function Sidebar() {
           <div className="icons">
             <div className="fb">
               <a
-                href="https://www.facebook.com/sandip.shrestha.927758"
+                href="https://www.facebook.com/sandip.shrestha.01"
                 target="_blank"
                 rel="noopener noreferrer"
               >

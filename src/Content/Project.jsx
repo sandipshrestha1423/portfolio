@@ -56,7 +56,7 @@ function Project() {
               <img src={project} alt="" />
             </div>
             <div className="card-title py-3">
-              <h2>NGO</h2>
+              <h2>Project</h2>
             </div>
           </a>
         </div>
